@@ -74,6 +74,13 @@
 
     <h1>Välkommen!</h1>
     <p class="lead">Den här sajten bygger på Bootstrap starter template.</p>
+    <article>
+      <h2>Recipes</h2>
+      <div id="recipe1">Äppelpaj</div>
+      <div id="recipe2" style="display: none;">Päronpaj</div>
+      <div id="recipe3" style="display: none;">Smoothie</div>
+      <button id="prev" onclick="prevRecipe ()">Previous</button>
+      <button id="next" onclick="nextRecipe ()">>Next</button>
   </div>
 </main>
 
@@ -92,6 +99,37 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script> 
 -->
+
+    <script type="text/javascript">
+      let alertMessage = (message) => {
+        alert(message);
+      }
+
+      let multiplyIngredient = (original, factor) => {
+        let result;
+        if(original > 0) {
+          result = original * factor;
+        }
+        else {
+          result = original;
+        }
+        alertMessage("Something went wrong, please try again.")
+        return result;
+      }  
+      let currentRecipe = 1;
+      let nextRecipe = () => {
+        document.getElementById("recipe"+currentRecipe).style.display = "none";
+        document.getElementById("recipe"+(currentRecipe + 1)).style.display = "block";
+      }
+
+      let prevRecipe = () => {
+
+      }
+
+
+    </script>
+
+
 
     <script type="text/javascript">
       alert("Welcome! To my assignment");
