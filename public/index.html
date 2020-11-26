@@ -6,12 +6,13 @@
     <meta name="description" content="">
     <meta name="author" content="Aminata Grut, Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-        <!-- Bootstrap core CSS -->
+    <title>Start | AMG</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
+
+
+<!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -30,15 +31,16 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="../assets/dist/css/starter-template.css" rel="stylesheet">
 
-  </head>
-
-  <body>
-
+<!-- Custom styles for this template -->
+    <!-- <link href="../assets/dist/css/starter-template.css" rel="stylesheet"> -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+<header>
+<!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">AMG</a>
+  <a class="navbar-brand" href="#"><b>AMG</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,19 +56,34 @@
         <a class="nav-link" href="referenser.html">Referenser </a>
       </li>
     </ul>
+    <form class="form-inline mt-2 mt-md-0">
+    <!--
     <form class="form-inline my-2 my-lg-0">
+    -->
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
+</header>
 
-<main role="main" class="container">
-  <div class="starter-template">
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+  <!-- <div class="starter-template"> -->
+
     <h1>Välkommen!</h1>
     <p class="lead">Den här sajten bygger på Bootstrap starter template.</p>
   </div>
-</main><!-- /.container -->
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">© AMG 2020</span>
+  </div>
+</footer>
+
+<!-- /.container -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
