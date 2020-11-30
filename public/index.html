@@ -7,13 +7,12 @@
     <meta name="author" content="Aminata Grut, Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
 
-    <title>Start | AMG</title>
+  <title>Start | AMG</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/">
-
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
 
 <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -33,107 +32,120 @@
     </style>
 
 <!-- Custom styles for this template -->
-    <!-- <link href="../assets/dist/css/starter-template.css" rel="stylesheet"> -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <link href="../assets/dist/css/starter-template.css" rel="stylesheet"> 
+  <!--  <link href="starter-template.css" rel="stylesheet"> -->
 </head>
-<body class="d-flex flex-column h-100">
+
+<body>
+<!-- <body class="d-flex flex-column h-100"> -->
 <header>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><b>AMG</b></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Start <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="omoss.html">Om oss </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="referenser.html">Referenser </a>
-      </li>
-    </ul>
-    <form class="form-inline mt-2 mt-md-0">
-    <!--
-    <form class="form-inline my-2 my-lg-0">
-    -->
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#"><b>AMG</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Start <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="omoss.html">Om oss </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="referenser.html">Referenser </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+      <form class="form-inline mt-2 mt-md-0">
+      <!--
+      <form class="form-inline my-2 my-lg-0">
+      -->
+        <input class="form-control mr-sm-2" type="text" placeholder="Sök" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Sök</button>
+      </form>
+    </div>
+  </nav>
 </header>
 
+
 <!-- Begin page content -->
-<main role="main" class="flex-shrink-0">
-  <div class="container">
-  <!-- <div class="starter-template"> -->
+<!-- <main role="main" class="flex-shrink-0"> -->
+<main role="main" class="container">
+  
+  <!-- <div class="container"> -->
+  <div class="starter-template">
 
     <h1>Välkommen!</h1>
-    <p class="lead">Den här sajten bygger på Bootstrap starter template.</p>
-    <article>
-      <h2>Recipes</h2>
-      <div id="recipe1">Äppelpaj</div>
-      <div id="recipe2" style="display: none;">Päronpaj</div>
-      <div id="recipe3" style="display: none;">Smoothie</div>
-      <button id="prev" onclick="prevRecipe ()">Previous</button>
-      <button id="next" onclick="nextRecipe ()">>Next</button>
-  </div>
+    <p class="lead">Den här sajten bygger på Bootstrap starter template.<br>
+    Nedan också en enkel tillämpning av javascript</p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+  <article>
+      <h2>Recept</h2>
+    <div id="recipe1">Äppelpaj<br><br><img src="img/nathalie-jolie-ERGI0DDJXco-unsplash.jpg" height="50%" width="50%"></img></div>
+      <div id="recipe2" style="display: none;">Ugnsbakade Päron<br><br><img src="img/maria-shkliaeva-v20iAW34n3g-unsplash.jpg" height="45%" width="45%"></img></div>
+      <div id="recipe3" style="display: none;">Fruktiga Smoothies<br><br><img src="img/sara-cervera-cjiJUfFCoUs-unsplash.jpg" height="25%" width="25%"></img></div>
+      <br>
+      <button id="prev" onclick="prevRecipe ()">< Förra</button>
+      <button id="next" onclick="nextRecipe ()">Nästa ></button>
+    </div>
+  </article>
+ </div> 
+
 </main>
 
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <span class="text-muted">© AMG 2020</span>
-  </div>
-</footer>
-
 <!-- /.container -->
+
+<!--
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
 -->
 
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+
     <script type="text/javascript">
+
+      /** MESSAGE WHEN NAVIGATING TO PAGE **/
+
       let alertMessage = (message) => {
         alert(message);
       }
 
-      let multiplyIngredient = (original, factor) => {
-        let result;
-        if(original > 0) {
-          result = original * factor;
-        }
-        else {
-          result = original;
-        }
-        alertMessage("Something went wrong, please try again.")
-        return result;
-      }  
+  
+
+      /** SLIDER FOR RECIPES **/
+
       let currentRecipe = 1;
       let nextRecipe = () => {
         document.getElementById("recipe"+currentRecipe).style.display = "none";
-        document.getElementById("recipe"+(currentRecipe + 1)).style.display = "block";
+        document.getElementById("recipe"+(currentRecipe+1)).style.display = "block";
+        currentRecipe++;
       }
 
       let prevRecipe = () => {
-
+        document.getElementById("recipe"+currentRecipe).style.display = "none";
+        document.getElementById("recipe"+(currentRecipe-1)).style.display = "block";
+        currentRecipe--;
       }
 
-
     </script>
-
 
 
     <script type="text/javascript">
-      alert("Welcome! To my assignment");
+      alert("Välkommen till min slutuppgift");
     </script>
+
     
   </body>
 </html>
