@@ -120,22 +120,24 @@
         alert(message);
       }
 
-  
-
       /** SLIDER FOR RECIPES **/
 
-      let currentRecipe = 1;
-      let nextRecipe = () => {
+    let currentRecipe = 1;
+    let nextRecipe = () => {
+            if (currentRecipe < 3){              
         document.getElementById("recipe"+currentRecipe).style.display = "none";
         document.getElementById("recipe"+(currentRecipe+1)).style.display = "block";
         currentRecipe++;
-      }
+        } 
+    }
 
-      let prevRecipe = () => {
+    let prevRecipe = () => {
+            if (currentRecipe > 1){
         document.getElementById("recipe"+currentRecipe).style.display = "none";
         document.getElementById("recipe"+(currentRecipe-1)).style.display = "block";
         currentRecipe--;
-      }
+        } 
+    }
 
     </script>
 
